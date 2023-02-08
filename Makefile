@@ -15,7 +15,7 @@ SERVICES := account auth confirmation event hermes mfa pagination password
 all:
 	@$(MAKE) clean
 	@echo "${BLUE}✓ Publishing changes to GitHub...${NC}\n"
-	./build.sh
+	bash build.sh
 	@echo "${GREEN}✓ All done!${NC}\n"
 
 .PHONY: clean
